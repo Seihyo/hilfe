@@ -66,7 +66,9 @@ async def on_message(message):
         if not common.WHITELIST.channels.__contains__(str(message.channel)) or not common.WHITELIST.member.__contains__(message.author.id):
             return
 
-        
+        # invoke gesamte nachricht
+	# command erstes wort hinter !
+	# arg zweites wort hinter !
         invoke = message.content[1:]
         command = invoke.split(" ")[0]
         try:
